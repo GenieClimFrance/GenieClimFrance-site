@@ -1,7 +1,14 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
+import Table from "./Table";
 
 function RenovationGeste() {
+  const [activeTab, setActiveTab] = useState("hors-idf");
+  const [showScrollHint, setShowScrollHint] = useState(true);
+
   return (
     <div className="bg-white">
       {/* Hero Section */}
@@ -89,10 +96,10 @@ function RenovationGeste() {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:items-center">
             <div className="lg:col-span-2">
               <p className="text-lg mb-6">
-                L’octroi des aides financières à la rénovation repose sur le
-                respect de certains critères d’éligibilité. MaPrimeRénov’ pour
-                la rénovation par geste ne fait pas exception. Découvrez les
-                prérequis à remplir pour en bénéficier.
+                L&apos;octroi des aides financières à la rénovation repose sur
+                le respect de certains critères d&apos;éligibilité.
+                MaPrimeRénov&apos; pour la rénovation par geste ne fait pas
+                exception. Découvrez les prérequis à remplir pour en bénéficier.
               </p>
 
               <div>
@@ -102,23 +109,24 @@ function RenovationGeste() {
                 <ul className="flex flex-col gap-4">
                   <li>
                     - Un logement occupé à titre de résidence principale (occupé
-                    au moins 8 mois par an). L’engagement d’occupation pourra
-                    être vérifié dans un délai d’un an à compter de la date de
-                    la demande de solde.
+                    au moins 8 mois par an). L&apos;engagement d&apos;occupation
+                    pourra être vérifié dans un délai d&apos;un an à compter de
+                    la date de la demande de solde.
                   </li>
                   <li>
                     - Un logement construit depuis au moins 15 ans en Métropole
                     et 2 ans en Outre-mer. Les propriétaires bailleurs doivent
-                    s’engager sur l’honneur à louer leur bien en tant que
-                    résidence principale sur une durée d’au moins 6 ans et dans
-                    un délai d’un an suivant la date de demande de paiement du
-                    solde de la prime (ce délai d’un an est applicable aux
-                    propriétaires bailleurs aux revenus supérieurs et
-                    intermédiaires et sera prochainement applicable aux
-                    propriétaires bailleurs modestes et très modestes). Si un
-                    propriétaire cesse de louer le logement avant cette durée de
-                    6 ans, il devra rembourser une partie de l’aide perçue (1/6
-                    de l’aide perçue pour chaque année non louée).
+                    s&apos;engager sur l&apos;honneur à louer leur bien en tant
+                    que résidence principale sur une durée d&apos;au moins 6 ans
+                    et dans un délai d&apos;un an suivant la date de demande de
+                    paiement du solde de la prime (ce délai d&apos;un an est
+                    applicable aux propriétaires bailleurs aux revenus
+                    supérieurs et intermédiaires et sera prochainement
+                    applicable aux propriétaires bailleurs modestes et très
+                    modestes). Si un propriétaire cesse de louer le logement
+                    avant cette durée de 6 ans, il devra rembourser une partie
+                    de l&apos;aide perçue (1/6 de l&apos;aide perçue pour chaque
+                    année non louée).
                   </li>
                 </ul>
               </div>
@@ -128,13 +136,14 @@ function RenovationGeste() {
                   Les acquéreurs d&apos;un logement sont également éligibles
                 </h3>
                 <p className="mb-6">
-                  Dans le cas où le logement fait l’objet d’une acquisition en
-                  cours à la date du dépôt de la demande le compromis de vente
-                  peut être joint par les demandeurs aux revenus intermédiaires
-                  ou supérieurs (cette mesure sera prochainement également
-                  appliquée aux demandeurs aux revenus modestes et très
-                  modestes) lors de la demande de prime. Ils devront fournir
-                  l’acte de vente définitif lors de la demande de solde.
+                  Dans le cas où le logement fait l&apos;objet d&apos;une
+                  acquisition en cours à la date du dépôt de la demande le
+                  compromis de vente peut être joint par les demandeurs aux
+                  revenus intermédiaires ou supérieurs (cette mesure sera
+                  prochainement également appliquée aux demandeurs aux revenus
+                  modestes et très modestes) lors de la demande de prime. Ils
+                  devront fournir l&apos;acte de vente définitif lors de la
+                  demande de solde.
                 </p>
               </div>
             </div>
@@ -143,10 +152,11 @@ function RenovationGeste() {
               <div className="bg-primary text-white p-6 rounded-xl">
                 <p className="text-sm mb-4">
                   Hors cas des associés de SCI occupants le logement tels que
-                  décrit supra, les SCI ne sont pas éligibles à l’aide MPR’. Les
-                  travaux restent néanmoins finançables au titre des autres
-                  dispositifs d’aides mis en place par l’État, tel les
-                  certificats d’économie d’énergie.
+                  décrit supra, les SCI ne sont pas éligibles à l&apos;aide
+                  MPR&apos;. Les travaux restent néanmoins finançables au titre
+                  des autres dispositifs d&apos;aides mis en place par
+                  l&apos;État, tel les certificats d&apos;économie
+                  d&apos;énergie.
                 </p>
               </div>
               <div className="bg-primary text-white p-6 rounded-xl">
@@ -154,13 +164,13 @@ function RenovationGeste() {
                   Une exception pour remplacer une chaudière au fioul
                 </h4>
                 <p className="text-sm mb-4">
-                  À titre exceptionnel, il est possible de bénéfi-cier de
-                  MaPrimeRénov’ dans un logement de moins de 15 ans pour
-                  l’installation d’un nouvel équipement de chauffage et/ou de
-                  produc-tion d’eau chaude sanitaire en remplacement d’une
-                  chaudière au fioul (avec dépose de cuve à fioul). Les ménages
-                  concernés doivent demander simultanément une prime « dépose de
-                  cuve à fioul ».
+                  À titre exceptionnel, il est possible de bénéficier de
+                  MaPrimeRénov&apos; dans un logement de moins de 15 ans pour
+                  l&apos;installation d&apos;un nouvel équipement de chauffage
+                  et/ou de production d&apos;eau chaude sanitaire en
+                  remplacement d&apos;une chaudière au fioul (avec dépose de
+                  cuve à fioul). Les ménages concernés doivent demander
+                  simultanément une prime « dépose de cuve à fioul ».
                 </p>
               </div>
             </div>
@@ -170,7 +180,7 @@ function RenovationGeste() {
 
       {/* Les travaux éligibles */}
       <section className="py-16 px-8 lg:px-28 xl:px-40 2xl:px-80">
-        <h2 className="text-3xl font-bold uppercase mb-12">
+        <h2 className="text-3xl font-bold text-center uppercase mb-20">
           Les travaux éligibles
         </h2>
         <div className="flex flex-wrap justify-center gap-12">
@@ -224,7 +234,9 @@ function RenovationGeste() {
                 className="max-h-16 w-auto object-contain"
               />
             </div>
-            <h4 className="font-bold text-sm"></h4>
+            <h4 className="font-bold text-sm">
+              Isolation des combles soufflés
+            </h4>
           </div>
 
           <div className="text-center w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5">
@@ -267,6 +279,14 @@ function RenovationGeste() {
           </div>
         </div>
       </section>
+
+      {/* PLAFOND DES RESSOURCES avec design sobre */}
+      <Table
+        activeTab={activeTab}
+        setActiveTab={setActiveTab}
+        showScrollHint={showScrollHint}
+        setShowScrollHint={setShowScrollHint}
+      />
 
       {/* Carte des zones 2025 */}
       <section className="py-16 px-8 lg:px-28 xl:px-40 2xl:px-80">

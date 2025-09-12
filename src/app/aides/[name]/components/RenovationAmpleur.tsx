@@ -1,7 +1,14 @@
+"use client";
+
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import Table from "./Table";
 
 function RenovationAmpleur() {
+  const [activeTab, setActiveTab] = useState("hors-idf");
+  const [showScrollHint, setShowScrollHint] = useState(true);
+
   return (
     <div className="bg-white">
       {/* Hero Section */}
@@ -31,15 +38,30 @@ function RenovationAmpleur() {
       </header>
 
       {/* Qu'est-ce que la rénovation d'ampleur */}
-      <section className="pt-16 px-4 lg:px-28 xl:px-40 2xl:px-96">
-        <h2 className="text-3xl font-bold uppercase mb-8">
+      <section className="py-16 px-8 lg:px-28 xl:px-40 2xl:px-80">
+        <h2 className="text-3xl font-bold uppercase mb-12">
           Qu&apos;est-ce que la rénovation d&apos;ampleur ?
         </h2>
         <div className="w-full">
           <p className="text-lg mb-6">
+            MaPrimeRénov’ est la principale aide de l’État pour la rénovation
+            énergétique en France. Elle finance des travaux permettant
+            d’améliorer significativement la performance énergétique des
+            logements et d’accélérer la transition vers des systèmes de
+            chauffage plus écologiques.
+          </p>
+          <p className="text-lg mb-6">
+            Depuis le 1er janvier 2024, MaPrimeRénov’ évolue avec un nouveau
+            parcours accompa- gné. Les ménages souhaitant s’engager dans des
+            travaux de rénovation permettant un gain minimal de 2 classes sur
+            leur DPE bénéficieront d’un accompagnement systématique et d’une
+            prime revalorisée. En poursuivant ce parcours, ils amélioreront
+            significativement l’efficacité énergétique de leur logement.
+          </p>
+          <p className="text-lg mb-6">
             La rénovation d&apos;ampleur est un programme gouvernemental qui
             oblige un ou plusieurs de travaux officiels simultanément et dans le
-            même logement, c&apos;est le nouveau terme privilégié en 2024, Une
+            même logement, c&apos;est le nouveau terme privilégié en 2024. Une
             rénovation est dite d&apos;ampleur lorsqu&apos;elle permet de gagner
             au moins deux étapes de DPE.
           </p>
@@ -129,13 +151,42 @@ function RenovationAmpleur() {
       </section>
 
       {/* Conditions d'éligibilité */}
-      <section className="py-10 px-8 lg:px-28 xl:px-40 2xl:px-80">
-        <h2 className="text-2xl font-bold uppercase mb-8 after:content-[''] after:block after:w-16 after:h-1 after:bg-primary after:mt-4">
+      <section className="py-16 px-8 lg:px-28 xl:px-40 2xl:px-80">
+        <h2 className="text-3xl font-bold uppercase mb-12 after:content-[''] after:block after:w-16 after:h-1 after:bg-primary after:mt-4">
           Conditions d&apos;éligibilité
         </h2>
+        <h3 className="text-xl font-bold text-primary mb-6">Pour qui ?</h3>
+        <ul className="space-y-2 mb-8">
+          <li className="text-lg">- Les propriétaires occupants</li>
+          <li className="text-lg">- Les propriétaires bailleurs</li>
+          <li className="text-lg">- Les usufruitiers</li>
+          <li className="text-lg">
+            - Les titulaires (occupants et bailleurs) d&apos;un droit réel
+            conférant l&apos;usage du bien ;
+          </li>
+          <li className="text-lg">
+            - Les propriétaires en indivision, si le demandeur fournit une
+            attestation indiquant qu&apos;il a obtenu l&apos;accord de tous les
+            indivisaires pour réaliser les travaux et bénéficier de l&apos;aide
+            MaPrimeRénov&apos;
+          </li>
+          <li className="text-lg">- SCI si un des propriétaire est occupant</li>
+        </ul>
+        <p className="text-lg font-bold uppercase mb-4">
+          Ne sont pas éligibles :
+        </p>
+        <ul className="space-y-2 mb-8">
+          <li className="text-lg">- Les nus-propriétaires</li>
+          <li className="text-lg">
+            - les propriétaires qui sont des personnes morales
+          </li>
+        </ul>
         <div>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:items-center">
             <div className="lg:col-span-2">
+              <h3 className="text-xl font-bold text-primary mb-6">
+                Pour quel logement ?
+              </h3>
               <p className="text-lg mb-6">
                 Le logement doit être occupé à titre de résidence principale (≥8
                 mois/an) et depuis au moins 15 ans. Les propriétaires occupants
@@ -145,10 +196,10 @@ function RenovationAmpleur() {
               </p>
 
               <div>
-                <h3 className="text-xl font-bold mb-4">
+                <h3 className="text-lg font-bold mb-4">
                   Les acquéreurs d&apos;un logement sont également éligibles
                 </h3>
-                <p className="mb-6">
+                <p className="text-lg mb-6">
                   Dans le cas où le logement fait l&apos;objet d&apos;une
                   acquisition en cours à la date du dépôt de la demande le
                   compromis de vente peut être joint par les demandeurs aux
@@ -183,11 +234,11 @@ function RenovationAmpleur() {
       </section>
 
       {/* Les travaux éligibles */}
-      <section className="py-10 px-8 lg:px-28 xl:px-40 2xl:px-80">
+      <section className="py-16 px-8 lg:px-28 xl:px-40 2xl:px-80">
         <h2 className="text-3xl font-bold uppercase mb-12 text-center">
           Les travaux éligibles
         </h2>
-        <div className="flex flex-wrap justify-center gap-12">
+        <div className="flex flex-wrap justify-center gap-8 lg:gap-12">
           <div className="text-center w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5">
             <div className="mx-auto mb-4 flex items-center justify-center h-16">
               <Image
@@ -199,7 +250,8 @@ function RenovationAmpleur() {
               />
             </div>
             <h4 className="font-bold text-sm">Pompe à chaleur AIR/AIR</h4>
-            <p className="text-sm">Pompe à chaleur AIR/EAU</p>
+            <p className="text-sm font-bold">Pompe à chaleur AIR/EAU</p>
+            <p className="text-sm font-bold">Pompe à chaleur duo</p>
           </div>
 
           <div className="text-center w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5">
@@ -279,13 +331,20 @@ function RenovationAmpleur() {
                 className="max-h-16 w-auto object-contain"
               />
             </div>
-            <h4 className="font-bold text-sm">Fenêtres photovoltaïques</h4>
+            <h4 className="font-bold text-sm">Panneaux photovoltaïques</h4>
           </div>
         </div>
       </section>
 
+      <Table
+        activeTab={activeTab}
+        setActiveTab={setActiveTab}
+        showScrollHint={showScrollHint}
+        setShowScrollHint={setShowScrollHint}
+      />
+
       {/* Parcours GénieClim France */}
-      <section className="bg-primary m-4 rounded-2xl text-white py-16 px-8 lg:mx-28 xl:mx-40 2xl:mx-96">
+      <section className="bg-primary rounded-2xl text-white py-16 px-8 lg:px-28 xl:px-40 2xl:px-80 mb-16 mt-16">
         <div className="max-w-4xl mx-auto">
           <div className="flex flex-col lg:flex-row items-center gap-12">
             <div className="lg:w-1/3">
@@ -300,7 +359,7 @@ function RenovationAmpleur() {
             <div className="lg:w-2/3">
               <div className="bg-black rounded-full p-2 px-4 mb-4 inline-block">
                 <span className="text-sm">
-                  Pompe à chaleur • 2 gestes d&apos;isolation
+                  Pompe à chaleur + 2 gestes d&apos;isolation
                 </span>
               </div>
               <h3 className="text-3xl font-bold mb-6">
@@ -321,6 +380,226 @@ function RenovationAmpleur() {
               >
                 ESTIMER MON INSTALLATION →
               </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Section Procédure clients */}
+      <section className="py-16 px-8 lg:px-28 xl:px-40 2xl:px-80 bg-gradient-to-br from-gray-50 to-white">
+        <div className="max-w-6xl mx-auto">
+          <div className="mb-12">
+            <h2 className="text-3xl lg:text-4xl font-bold uppercase mb-3 text-gray-900">
+              Procédure clients
+            </h2>
+            <div className="w-16 h-0.5 bg-primary rounded-full"></div>
+            <p className="text-base text-gray-600 mt-4 max-w-2xl">
+              Découvrez notre processus en 13 étapes pour vous accompagner de A
+              à Z dans votre projet de rénovation énergétique.
+            </p>
+          </div>
+
+          <div className="max-w-4xl">
+            <div className="relative">
+              {/* Ligne verticale dégradée */}
+              <div className="absolute left-5 top-8 bottom-8 w-0.5 bg-gradient-to-b from-primary via-primary to-primary/30 rounded-full"></div>
+
+              <div className="space-y-6">
+                {/* Étape 1 */}
+                <div className="relative flex items-center gap-6 group">
+                  <div className="relative flex-shrink-0">
+                    <div className="w-10 h-10 bg-gradient-to-br from-primary to-primary/80 text-white rounded-full flex items-center justify-center font-bold text-sm shadow-lg ring-2 ring-white z-10 group-hover:scale-105 transition-transform duration-300">
+                      1
+                    </div>
+                    <div className="absolute inset-0 w-10 h-10 bg-primary/20 rounded-full animate-pulse"></div>
+                  </div>
+                  <div className="flex-1 bg-white rounded-lg p-4 shadow-md border border-gray-100 group-hover:shadow-lg group-hover:border-primary/20 transition-all duration-300">
+                    <h4 className="text-lg font-bold text-gray-900">
+                      PREMIÈRE VISITE CHEZ LE CLIENT
+                    </h4>
+                  </div>
+                </div>
+
+                {/* Étape 2 */}
+                <div className="relative flex items-center gap-6 group">
+                  <div className="relative flex-shrink-0">
+                    <div className="w-10 h-10 bg-gradient-to-br from-primary to-primary/80 text-white rounded-full flex items-center justify-center font-bold text-sm shadow-lg ring-2 ring-white z-10 group-hover:scale-105 transition-transform duration-300">
+                      2
+                    </div>
+                    <div className="absolute inset-0 w-10 h-10 bg-primary/20 rounded-full animate-pulse"></div>
+                  </div>
+                  <div className="flex-1 bg-white rounded-lg p-4 shadow-md border border-gray-100 group-hover:shadow-lg group-hover:border-primary/20 transition-all duration-300">
+                    <h4 className="text-lg font-bold text-gray-900">
+                      RÉALISATION DE L&apos;AUDIT ÉNERGÉTIQUE
+                    </h4>
+                  </div>
+                </div>
+
+                {/* Étape 3 */}
+                <div className="relative flex items-center gap-6 group">
+                  <div className="relative flex-shrink-0">
+                    <div className="w-10 h-10 bg-gradient-to-br from-primary to-primary/80 text-white rounded-full flex items-center justify-center font-bold text-sm shadow-lg ring-2 ring-white z-10 group-hover:scale-105 transition-transform duration-300">
+                      3
+                    </div>
+                    <div className="absolute inset-0 w-10 h-10 bg-primary/20 rounded-full animate-pulse"></div>
+                  </div>
+                  <div className="flex-1 bg-white rounded-lg p-4 shadow-md border border-gray-100 group-hover:shadow-lg group-hover:border-primary/20 transition-all duration-300">
+                    <h4 className="text-lg font-bold text-gray-900">
+                      PASSAGE DU MAR CHEZ LE CLIENT
+                    </h4>
+                  </div>
+                </div>
+
+                {/* Étape 4 */}
+                <div className="relative flex items-center gap-6 group">
+                  <div className="relative flex-shrink-0">
+                    <div className="w-10 h-10 bg-gradient-to-br from-primary to-primary/80 text-white rounded-full flex items-center justify-center font-bold text-sm shadow-lg ring-2 ring-white z-10 group-hover:scale-105 transition-transform duration-300">
+                      4
+                    </div>
+                    <div className="absolute inset-0 w-10 h-10 bg-primary/20 rounded-full animate-pulse"></div>
+                  </div>
+                  <div className="flex-1 bg-white rounded-lg p-4 shadow-md border border-gray-100 group-hover:shadow-lg group-hover:border-primary/20 transition-all duration-300">
+                    <h4 className="text-lg font-bold text-gray-900">
+                      MONTAGE DU DOSSIER : DEVIS AVEC SCÉNARIO CHOISI
+                    </h4>
+                  </div>
+                </div>
+
+                {/* Étape 5 */}
+                <div className="relative flex items-center gap-6 group">
+                  <div className="relative flex-shrink-0">
+                    <div className="w-10 h-10 bg-gradient-to-br from-primary to-primary/80 text-white rounded-full flex items-center justify-center font-bold text-sm shadow-lg ring-2 ring-white z-10 group-hover:scale-105 transition-transform duration-300">
+                      5
+                    </div>
+                    <div className="absolute inset-0 w-10 h-10 bg-primary/20 rounded-full animate-pulse"></div>
+                  </div>
+                  <div className="flex-1 bg-white rounded-lg p-4 shadow-md border border-gray-100 group-hover:shadow-lg group-hover:border-primary/20 transition-all duration-300">
+                    <h4 className="text-lg font-bold text-gray-900">
+                      PROPOSITION DU PROJET AUPRÈS D&apos;UN MAR
+                    </h4>
+                  </div>
+                </div>
+
+                {/* Étape 6 */}
+                <div className="relative flex items-center gap-6 group">
+                  <div className="relative flex-shrink-0">
+                    <div className="w-10 h-10 bg-gradient-to-br from-primary to-primary/80 text-white rounded-full flex items-center justify-center font-bold text-sm shadow-lg ring-2 ring-white z-10 group-hover:scale-105 transition-transform duration-300">
+                      6
+                    </div>
+                    <div className="absolute inset-0 w-10 h-10 bg-primary/20 rounded-full animate-pulse"></div>
+                  </div>
+                  <div className="flex-1 bg-white rounded-lg p-4 shadow-md border border-gray-100 group-hover:shadow-lg group-hover:border-primary/20 transition-all duration-300">
+                    <h4 className="text-lg font-bold text-gray-900">
+                      DÉPÔTS DES DOCUMENTS ADMINISTRATIFS
+                    </h4>
+                  </div>
+                </div>
+
+                {/* Étape 7 */}
+                <div className="relative flex items-center gap-6 group">
+                  <div className="relative flex-shrink-0">
+                    <div className="w-10 h-10 bg-gradient-to-br from-primary to-primary/80 text-white rounded-full flex items-center justify-center font-bold text-sm shadow-lg ring-2 ring-white z-10 group-hover:scale-105 transition-transform duration-300">
+                      7
+                    </div>
+                    <div className="absolute inset-0 w-10 h-10 bg-primary/20 rounded-full animate-pulse"></div>
+                  </div>
+                  <div className="flex-1 bg-white rounded-lg p-4 shadow-md border border-gray-100 group-hover:shadow-lg group-hover:border-primary/20 transition-all duration-300">
+                    <h4 className="text-lg font-bold text-gray-900">
+                      PASSAGE EN COMMISSION AUPRÈS DE L&apos;ANAH
+                    </h4>
+                  </div>
+                </div>
+
+                {/* Étape 8 */}
+                <div className="relative flex items-center gap-6 group">
+                  <div className="relative flex-shrink-0">
+                    <div className="w-10 h-10 bg-gradient-to-br from-primary to-primary/80 text-white rounded-full flex items-center justify-center font-bold text-sm shadow-lg ring-2 ring-white z-10 group-hover:scale-105 transition-transform duration-300">
+                      8
+                    </div>
+                    <div className="absolute inset-0 w-10 h-10 bg-primary/20 rounded-full animate-pulse"></div>
+                  </div>
+                  <div className="flex-1 bg-white rounded-lg p-4 shadow-md border border-gray-100 group-hover:shadow-lg group-hover:border-primary/20 transition-all duration-300">
+                    <h4 className="text-lg font-bold text-gray-900">
+                      VALIDATION DE LA PRIME
+                    </h4>
+                  </div>
+                </div>
+
+                {/* Étape 9 */}
+                <div className="relative flex items-center gap-6 group">
+                  <div className="relative flex-shrink-0">
+                    <div className="w-10 h-10 bg-gradient-to-br from-primary to-primary/80 text-white rounded-full flex items-center justify-center font-bold text-sm shadow-lg ring-2 ring-white z-10 group-hover:scale-105 transition-transform duration-300">
+                      9
+                    </div>
+                    <div className="absolute inset-0 w-10 h-10 bg-primary/20 rounded-full animate-pulse"></div>
+                  </div>
+                  <div className="flex-1 bg-white rounded-lg p-4 shadow-md border border-gray-100 group-hover:shadow-lg group-hover:border-primary/20 transition-all duration-300">
+                    <h4 className="text-lg font-bold text-gray-900">
+                      DEMANDE D&apos;AVANCE DE LA PRIME
+                    </h4>
+                  </div>
+                </div>
+
+                {/* Étape 10 */}
+                <div className="relative flex items-center gap-6 group">
+                  <div className="relative flex-shrink-0">
+                    <div className="w-10 h-10 bg-gradient-to-br from-primary to-primary/80 text-white rounded-full flex items-center justify-center font-bold text-sm shadow-lg ring-2 ring-white z-10 group-hover:scale-105 transition-transform duration-300">
+                      10
+                    </div>
+                    <div className="absolute inset-0 w-10 h-10 bg-primary/20 rounded-full animate-pulse"></div>
+                  </div>
+                  <div className="flex-1 bg-white rounded-lg p-4 shadow-md border border-gray-100 group-hover:shadow-lg group-hover:border-primary/20 transition-all duration-300">
+                    <h4 className="text-lg font-bold text-gray-900">
+                      DÉMARRAGE DES TRAVAUX
+                    </h4>
+                  </div>
+                </div>
+
+                {/* Étape 11 */}
+                <div className="relative flex items-center gap-6 group">
+                  <div className="relative flex-shrink-0">
+                    <div className="w-10 h-10 bg-gradient-to-br from-primary to-primary/80 text-white rounded-full flex items-center justify-center font-bold text-sm shadow-lg ring-2 ring-white z-10 group-hover:scale-105 transition-transform duration-300">
+                      11
+                    </div>
+                    <div className="absolute inset-0 w-10 h-10 bg-primary/20 rounded-full animate-pulse"></div>
+                  </div>
+                  <div className="flex-1 bg-white rounded-lg p-4 shadow-md border border-gray-100 group-hover:shadow-lg group-hover:border-primary/20 transition-all duration-300">
+                    <h4 className="text-lg font-bold text-gray-900">
+                      FIN DES TRAVAUX
+                    </h4>
+                  </div>
+                </div>
+
+                {/* Étape 12 */}
+                <div className="relative flex items-center gap-6 group">
+                  <div className="relative flex-shrink-0">
+                    <div className="w-10 h-10 bg-gradient-to-br from-primary to-primary/80 text-white rounded-full flex items-center justify-center font-bold text-sm shadow-lg ring-2 ring-white z-10 group-hover:scale-105 transition-transform duration-300">
+                      12
+                    </div>
+                    <div className="absolute inset-0 w-10 h-10 bg-primary/20 rounded-full animate-pulse"></div>
+                  </div>
+                  <div className="flex-1 bg-white rounded-lg p-4 shadow-md border border-gray-100 group-hover:shadow-lg group-hover:border-primary/20 transition-all duration-300">
+                    <h4 className="text-lg font-bold text-gray-900">
+                      PASSAGE DU MAR
+                    </h4>
+                  </div>
+                </div>
+
+                {/* Étape 13 */}
+                <div className="relative flex items-center gap-6 group">
+                  <div className="relative flex-shrink-0">
+                    <div className="w-10 h-10 bg-gradient-to-br from-primary to-primary/80 text-white rounded-full flex items-center justify-center font-bold text-sm shadow-lg ring-2 ring-white z-10 group-hover:scale-105 transition-transform duration-300">
+                      13
+                    </div>
+                    <div className="absolute inset-0 w-10 h-10 bg-primary/20 rounded-full animate-pulse"></div>
+                  </div>
+                  <div className="flex-1 bg-white rounded-lg p-4 shadow-md border border-gray-100 group-hover:shadow-lg group-hover:border-primary/20 transition-all duration-300">
+                    <h4 className="text-lg font-bold text-gray-900">
+                      DÉPÔT DES FACTURES ET OBTENTION DU SOLDE
+                    </h4>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

@@ -178,6 +178,14 @@ function Navbar() {
                       Rénovation d&apos;ampleur
                     </Link>
                   </li>
+                  <li>
+                    <Link
+                      href="/aides/certificats-economies"
+                      className="hover:text-primary uppercase hover:bg-transparent active:bg-primary focus-visible:outline-primary"
+                    >
+                      Certificats d&apos;économie d&apos;énergie
+                    </Link>
+                  </li>
                 </ul>
               </div>
               <li
@@ -318,6 +326,15 @@ function Navbar() {
                     onClick={closeDrawer}
                   >
                     Rénovation d&apos;ampleur
+                  </Link>
+                </li>
+                <li className="uppercase">
+                  <Link
+                    href="/aides/certificats-economies"
+                    tabIndex={0}
+                    onClick={closeDrawer}
+                  >
+                    Certificats d&apos;économie d&apos;énergie
                   </Link>
                 </li>
               </ul>
