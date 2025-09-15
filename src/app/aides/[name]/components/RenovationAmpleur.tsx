@@ -399,204 +399,427 @@ function RenovationAmpleur() {
             </p>
           </div>
 
-          <div className="max-w-4xl">
-            <div className="relative">
-              {/* Ligne verticale dégradée */}
-              <div className="absolute left-5 top-8 bottom-8 w-0.5 bg-gradient-to-b from-primary via-primary to-primary/30 rounded-full"></div>
+          <div className="max-w-6xl">
+            {/* Layout mobile : une seule colonne */}
+            <div className="lg:hidden">
+              <div className="relative">
+                {/* Ligne verticale dégradée */}
+                <div className="absolute left-5 top-8 bottom-16 w-0.5 bg-gradient-to-b from-primary via-primary to-primary/30 rounded-full"></div>
 
-              <div className="space-y-6">
-                {/* Étape 1 */}
-                <div className="relative flex items-center gap-6 group">
-                  <div className="relative flex-shrink-0">
-                    <div className="w-10 h-10 bg-gradient-to-br from-primary to-primary/80 text-white rounded-full flex items-center justify-center font-bold text-sm shadow-lg ring-2 ring-white z-10 group-hover:scale-105 transition-transform duration-300">
-                      1
+                <div className="space-y-6">
+                  {/* Étape 1 */}
+                  <div className="relative flex items-center gap-6 group">
+                    <div className="relative flex-shrink-0">
+                      <div className="w-10 h-10 bg-gradient-to-br from-primary to-primary/80 text-white rounded-full flex items-center justify-center font-bold text-sm shadow-lg ring-2 ring-white z-10 group-hover:scale-105 transition-transform duration-300">
+                        1
+                      </div>
+                      <div className="absolute inset-0 w-10 h-10 bg-primary/20 rounded-full animate-pulse"></div>
                     </div>
-                    <div className="absolute inset-0 w-10 h-10 bg-primary/20 rounded-full animate-pulse"></div>
+                    <div className="flex-1 bg-white rounded-lg p-4 shadow-md border border-gray-100 group-hover:shadow-lg group-hover:border-primary/20 transition-all duration-300">
+                      <h4 className="text-lg font-bold text-gray-900">
+                        PREMIÈRE VISITE CHEZ LE CLIENT
+                      </h4>
+                    </div>
                   </div>
-                  <div className="flex-1 bg-white rounded-lg p-4 shadow-md border border-gray-100 group-hover:shadow-lg group-hover:border-primary/20 transition-all duration-300">
-                    <h4 className="text-lg font-bold text-gray-900">
-                      PREMIÈRE VISITE CHEZ LE CLIENT
-                    </h4>
+
+                  {/* Étape 2 */}
+                  <div className="relative flex items-center gap-6 group">
+                    <div className="relative flex-shrink-0">
+                      <div className="w-10 h-10 bg-gradient-to-br from-primary to-primary/80 text-white rounded-full flex items-center justify-center font-bold text-sm shadow-lg ring-2 ring-white z-10 group-hover:scale-105 transition-transform duration-300">
+                        2
+                      </div>
+                      <div className="absolute inset-0 w-10 h-10 bg-primary/20 rounded-full animate-pulse"></div>
+                    </div>
+                    <div className="flex-1 bg-white rounded-lg p-4 shadow-md border border-gray-100 group-hover:shadow-lg group-hover:border-primary/20 transition-all duration-300">
+                      <h4 className="text-lg font-bold text-gray-900">
+                        RÉALISATION DE L&apos;AUDIT ÉNERGÉTIQUE
+                      </h4>
+                    </div>
+                  </div>
+
+                  {/* Étape 3 */}
+                  <div className="relative flex items-center gap-6 group">
+                    <div className="relative flex-shrink-0">
+                      <div className="w-10 h-10 bg-gradient-to-br from-primary to-primary/80 text-white rounded-full flex items-center justify-center font-bold text-sm shadow-lg ring-2 ring-white z-10 group-hover:scale-105 transition-transform duration-300">
+                        3
+                      </div>
+                      <div className="absolute inset-0 w-10 h-10 bg-primary/20 rounded-full animate-pulse"></div>
+                    </div>
+                    <div className="flex-1 bg-white rounded-lg p-4 shadow-md border border-gray-100 group-hover:shadow-lg group-hover:border-primary/20 transition-all duration-300">
+                      <h4 className="text-lg font-bold text-gray-900">
+                        PASSAGE DU MAR CHEZ LE CLIENT
+                      </h4>
+                    </div>
+                  </div>
+
+                  {/* Étape 4 */}
+                  <div className="relative flex items-center gap-6 group">
+                    <div className="relative flex-shrink-0">
+                      <div className="w-10 h-10 bg-gradient-to-br from-primary to-primary/80 text-white rounded-full flex items-center justify-center font-bold text-sm shadow-lg ring-2 ring-white z-10 group-hover:scale-105 transition-transform duration-300">
+                        4
+                      </div>
+                      <div className="absolute inset-0 w-10 h-10 bg-primary/20 rounded-full animate-pulse"></div>
+                    </div>
+                    <div className="flex-1 bg-white rounded-lg p-4 shadow-md border border-gray-100 group-hover:shadow-lg group-hover:border-primary/20 transition-all duration-300">
+                      <h4 className="text-lg font-bold text-gray-900">
+                        MONTAGE DU DOSSIER : DEVIS AVEC SCÉNARIO CHOISI
+                      </h4>
+                    </div>
+                  </div>
+
+                  {/* Étape 5 */}
+                  <div className="relative flex items-center gap-6 group">
+                    <div className="relative flex-shrink-0">
+                      <div className="w-10 h-10 bg-gradient-to-br from-primary to-primary/80 text-white rounded-full flex items-center justify-center font-bold text-sm shadow-lg ring-2 ring-white z-10 group-hover:scale-105 transition-transform duration-300">
+                        5
+                      </div>
+                      <div className="absolute inset-0 w-10 h-10 bg-primary/20 rounded-full animate-pulse"></div>
+                    </div>
+                    <div className="flex-1 bg-white rounded-lg p-4 shadow-md border border-gray-100 group-hover:shadow-lg group-hover:border-primary/20 transition-all duration-300">
+                      <h4 className="text-lg font-bold text-gray-900">
+                        PROPOSITION DU PROJET AUPRÈS D&apos;UN MAR
+                      </h4>
+                    </div>
+                  </div>
+
+                  {/* Étape 6 */}
+                  <div className="relative flex items-center gap-6 group">
+                    <div className="relative flex-shrink-0">
+                      <div className="w-10 h-10 bg-gradient-to-br from-primary to-primary/80 text-white rounded-full flex items-center justify-center font-bold text-sm shadow-lg ring-2 ring-white z-10 group-hover:scale-105 transition-transform duration-300">
+                        6
+                      </div>
+                      <div className="absolute inset-0 w-10 h-10 bg-primary/20 rounded-full animate-pulse"></div>
+                    </div>
+                    <div className="flex-1 bg-white rounded-lg p-4 shadow-md border border-gray-100 group-hover:shadow-lg group-hover:border-primary/20 transition-all duration-300">
+                      <h4 className="text-lg font-bold text-gray-900">
+                        DÉPÔTS DES DOCUMENTS ADMINISTRATIFS
+                      </h4>
+                    </div>
+                  </div>
+
+                  {/* Étape 7 */}
+                  <div className="relative flex items-center gap-6 group">
+                    <div className="relative flex-shrink-0">
+                      <div className="w-10 h-10 bg-gradient-to-br from-primary to-primary/80 text-white rounded-full flex items-center justify-center font-bold text-sm shadow-lg ring-2 ring-white z-10 group-hover:scale-105 transition-transform duration-300">
+                        7
+                      </div>
+                      <div className="absolute inset-0 w-10 h-10 bg-primary/20 rounded-full animate-pulse"></div>
+                    </div>
+                    <div className="flex-1 bg-white rounded-lg p-4 shadow-md border border-gray-100 group-hover:shadow-lg group-hover:border-primary/20 transition-all duration-300">
+                      <h4 className="text-lg font-bold text-gray-900">
+                        PASSAGE EN COMMISSION AUPRÈS DE L&apos;ANAH
+                      </h4>
+                    </div>
+                  </div>
+
+                  {/* Étape 8 */}
+                  <div className="relative flex items-center gap-6 group">
+                    <div className="relative flex-shrink-0">
+                      <div className="w-10 h-10 bg-gradient-to-br from-primary to-primary/80 text-white rounded-full flex items-center justify-center font-bold text-sm shadow-lg ring-2 ring-white z-10 group-hover:scale-105 transition-transform duration-300">
+                        8
+                      </div>
+                      <div className="absolute inset-0 w-10 h-10 bg-primary/20 rounded-full animate-pulse"></div>
+                    </div>
+                    <div className="flex-1 bg-white rounded-lg p-4 shadow-md border border-gray-100 group-hover:shadow-lg group-hover:border-primary/20 transition-all duration-300">
+                      <h4 className="text-lg font-bold text-gray-900">
+                        VALIDATION DE LA PRIME
+                      </h4>
+                    </div>
+                  </div>
+
+                  {/* Étape 9 */}
+                  <div className="relative flex items-center gap-6 group">
+                    <div className="relative flex-shrink-0">
+                      <div className="w-10 h-10 bg-gradient-to-br from-primary to-primary/80 text-white rounded-full flex items-center justify-center font-bold text-sm shadow-lg ring-2 ring-white z-10 group-hover:scale-105 transition-transform duration-300">
+                        9
+                      </div>
+                      <div className="absolute inset-0 w-10 h-10 bg-primary/20 rounded-full animate-pulse"></div>
+                    </div>
+                    <div className="flex-1 bg-white rounded-lg p-4 shadow-md border border-gray-100 group-hover:shadow-lg group-hover:border-primary/20 transition-all duration-300">
+                      <h4 className="text-lg font-bold text-gray-900">
+                        DEMANDE D&apos;AVANCE DE LA PRIME
+                      </h4>
+                    </div>
+                  </div>
+
+                  {/* Étape 10 */}
+                  <div className="relative flex items-center gap-6 group">
+                    <div className="relative flex-shrink-0">
+                      <div className="w-10 h-10 bg-gradient-to-br from-primary to-primary/80 text-white rounded-full flex items-center justify-center font-bold text-sm shadow-lg ring-2 ring-white z-10 group-hover:scale-105 transition-transform duration-300">
+                        10
+                      </div>
+                      <div className="absolute inset-0 w-10 h-10 bg-primary/20 rounded-full animate-pulse"></div>
+                    </div>
+                    <div className="flex-1 bg-white rounded-lg p-4 shadow-md border border-gray-100 group-hover:shadow-lg group-hover:border-primary/20 transition-all duration-300">
+                      <h4 className="text-lg font-bold text-gray-900">
+                        DÉMARRAGE DES TRAVAUX
+                      </h4>
+                    </div>
+                  </div>
+
+                  {/* Étape 11 */}
+                  <div className="relative flex items-center gap-6 group">
+                    <div className="relative flex-shrink-0">
+                      <div className="w-10 h-10 bg-gradient-to-br from-primary to-primary/80 text-white rounded-full flex items-center justify-center font-bold text-sm shadow-lg ring-2 ring-white z-10 group-hover:scale-105 transition-transform duration-300">
+                        11
+                      </div>
+                      <div className="absolute inset-0 w-10 h-10 bg-primary/20 rounded-full animate-pulse"></div>
+                    </div>
+                    <div className="flex-1 bg-white rounded-lg p-4 shadow-md border border-gray-100 group-hover:shadow-lg group-hover:border-primary/20 transition-all duration-300">
+                      <h4 className="text-lg font-bold text-gray-900">
+                        FIN DES TRAVAUX
+                      </h4>
+                    </div>
+                  </div>
+
+                  {/* Étape 12 */}
+                  <div className="relative flex items-center gap-6 group">
+                    <div className="relative flex-shrink-0">
+                      <div className="w-10 h-10 bg-gradient-to-br from-primary to-primary/80 text-white rounded-full flex items-center justify-center font-bold text-sm shadow-lg ring-2 ring-white z-10 group-hover:scale-105 transition-transform duration-300">
+                        12
+                      </div>
+                      <div className="absolute inset-0 w-10 h-10 bg-primary/20 rounded-full animate-pulse"></div>
+                    </div>
+                    <div className="flex-1 bg-white rounded-lg p-4 shadow-md border border-gray-100 group-hover:shadow-lg group-hover:border-primary/20 transition-all duration-300">
+                      <h4 className="text-lg font-bold text-gray-900">
+                        PASSAGE DU MAR
+                      </h4>
+                    </div>
+                  </div>
+
+                  {/* Étape 13 */}
+                  <div className="relative flex items-center gap-6 group">
+                    <div className="relative flex-shrink-0">
+                      <div className="w-10 h-10 bg-gradient-to-br from-primary to-primary/80 text-white rounded-full flex items-center justify-center font-bold text-sm shadow-lg ring-2 ring-white z-10 group-hover:scale-105 transition-transform duration-300">
+                        13
+                      </div>
+                      <div className="absolute inset-0 w-10 h-10 bg-primary/20 rounded-full animate-pulse"></div>
+                    </div>
+                    <div className="flex-1 bg-white rounded-lg p-4 shadow-md border border-gray-100 group-hover:shadow-lg group-hover:border-primary/20 transition-all duration-300">
+                      <h4 className="text-lg font-bold text-gray-900">
+                        DÉPÔT DES FACTURES ET OBTENTION DU SOLDE
+                      </h4>
+                    </div>
                   </div>
                 </div>
+              </div>
+            </div>
 
-                {/* Étape 2 */}
-                <div className="relative flex items-center gap-6 group">
-                  <div className="relative flex-shrink-0">
-                    <div className="w-10 h-10 bg-gradient-to-br from-primary to-primary/80 text-white rounded-full flex items-center justify-center font-bold text-sm shadow-lg ring-2 ring-white z-10 group-hover:scale-105 transition-transform duration-300">
-                      2
+            {/* Layout desktop : deux colonnes */}
+            <div className="hidden lg:grid lg:grid-cols-2 lg:gap-8">
+              {/* Première colonne - Étapes 1 à 7 */}
+              <div className="relative">
+                {/* Ligne verticale dégradée pour la première colonne */}
+                <div
+                  className="absolute left-5 top-8 w-0.5 bg-gradient-to-b from-primary via-primary to-primary/30 rounded-full"
+                  style={{ height: "calc(100% - 80px)" }}
+                ></div>
+
+                <div className="space-y-6">
+                  {/* Étape 1 */}
+                  <div className="relative flex items-center gap-6 group">
+                    <div className="relative flex-shrink-0">
+                      <div className="w-10 h-10 bg-gradient-to-br from-primary to-primary/80 text-white rounded-full flex items-center justify-center font-bold text-sm shadow-lg ring-2 ring-white z-10 group-hover:scale-105 transition-transform duration-300">
+                        1
+                      </div>
+                      <div className="absolute inset-0 w-10 h-10 bg-primary/20 rounded-full animate-pulse"></div>
                     </div>
-                    <div className="absolute inset-0 w-10 h-10 bg-primary/20 rounded-full animate-pulse"></div>
+                    <div className="flex-1 bg-white rounded-lg p-4 shadow-md border border-gray-100 group-hover:shadow-lg group-hover:border-primary/20 transition-all duration-300">
+                      <h4 className="text-lg font-bold text-gray-900">
+                        PREMIÈRE VISITE CHEZ LE CLIENT
+                      </h4>
+                    </div>
                   </div>
-                  <div className="flex-1 bg-white rounded-lg p-4 shadow-md border border-gray-100 group-hover:shadow-lg group-hover:border-primary/20 transition-all duration-300">
-                    <h4 className="text-lg font-bold text-gray-900">
-                      RÉALISATION DE L&apos;AUDIT ÉNERGÉTIQUE
-                    </h4>
+
+                  {/* Étape 2 */}
+                  <div className="relative flex items-center gap-6 group">
+                    <div className="relative flex-shrink-0">
+                      <div className="w-10 h-10 bg-gradient-to-br from-primary to-primary/80 text-white rounded-full flex items-center justify-center font-bold text-sm shadow-lg ring-2 ring-white z-10 group-hover:scale-105 transition-transform duration-300">
+                        2
+                      </div>
+                      <div className="absolute inset-0 w-10 h-10 bg-primary/20 rounded-full animate-pulse"></div>
+                    </div>
+                    <div className="flex-1 bg-white rounded-lg p-4 shadow-md border border-gray-100 group-hover:shadow-lg group-hover:border-primary/20 transition-all duration-300">
+                      <h4 className="text-lg font-bold text-gray-900">
+                        RÉALISATION DE L&apos;AUDIT ÉNERGÉTIQUE
+                      </h4>
+                    </div>
+                  </div>
+
+                  {/* Étape 3 */}
+                  <div className="relative flex items-center gap-6 group">
+                    <div className="relative flex-shrink-0">
+                      <div className="w-10 h-10 bg-gradient-to-br from-primary to-primary/80 text-white rounded-full flex items-center justify-center font-bold text-sm shadow-lg ring-2 ring-white z-10 group-hover:scale-105 transition-transform duration-300">
+                        3
+                      </div>
+                      <div className="absolute inset-0 w-10 h-10 bg-primary/20 rounded-full animate-pulse"></div>
+                    </div>
+                    <div className="flex-1 bg-white rounded-lg p-4 shadow-md border border-gray-100 group-hover:shadow-lg group-hover:border-primary/20 transition-all duration-300">
+                      <h4 className="text-lg font-bold text-gray-900">
+                        PASSAGE DU MAR CHEZ LE CLIENT
+                      </h4>
+                    </div>
+                  </div>
+
+                  {/* Étape 4 */}
+                  <div className="relative flex items-center gap-6 group">
+                    <div className="relative flex-shrink-0">
+                      <div className="w-10 h-10 bg-gradient-to-br from-primary to-primary/80 text-white rounded-full flex items-center justify-center font-bold text-sm shadow-lg ring-2 ring-white z-10 group-hover:scale-105 transition-transform duration-300">
+                        4
+                      </div>
+                      <div className="absolute inset-0 w-10 h-10 bg-primary/20 rounded-full animate-pulse"></div>
+                    </div>
+                    <div className="flex-1 bg-white rounded-lg p-4 shadow-md border border-gray-100 group-hover:shadow-lg group-hover:border-primary/20 transition-all duration-300">
+                      <h4 className="text-lg font-bold text-gray-900">
+                        MONTAGE DU DOSSIER : DEVIS AVEC SCÉNARIO CHOISI
+                      </h4>
+                    </div>
+                  </div>
+
+                  {/* Étape 5 */}
+                  <div className="relative flex items-center gap-6 group">
+                    <div className="relative flex-shrink-0">
+                      <div className="w-10 h-10 bg-gradient-to-br from-primary to-primary/80 text-white rounded-full flex items-center justify-center font-bold text-sm shadow-lg ring-2 ring-white z-10 group-hover:scale-105 transition-transform duration-300">
+                        5
+                      </div>
+                      <div className="absolute inset-0 w-10 h-10 bg-primary/20 rounded-full animate-pulse"></div>
+                    </div>
+                    <div className="flex-1 bg-white rounded-lg p-4 shadow-md border border-gray-100 group-hover:shadow-lg group-hover:border-primary/20 transition-all duration-300">
+                      <h4 className="text-lg font-bold text-gray-900">
+                        PROPOSITION DU PROJET AUPRÈS D&apos;UN MAR
+                      </h4>
+                    </div>
+                  </div>
+
+                  {/* Étape 6 */}
+                  <div className="relative flex items-center gap-6 group">
+                    <div className="relative flex-shrink-0">
+                      <div className="w-10 h-10 bg-gradient-to-br from-primary to-primary/80 text-white rounded-full flex items-center justify-center font-bold text-sm shadow-lg ring-2 ring-white z-10 group-hover:scale-105 transition-transform duration-300">
+                        6
+                      </div>
+                      <div className="absolute inset-0 w-10 h-10 bg-primary/20 rounded-full animate-pulse"></div>
+                    </div>
+                    <div className="flex-1 bg-white rounded-lg p-4 shadow-md border border-gray-100 group-hover:shadow-lg group-hover:border-primary/20 transition-all duration-300">
+                      <h4 className="text-lg font-bold text-gray-900">
+                        DÉPÔTS DES DOCUMENTS ADMINISTRATIFS
+                      </h4>
+                    </div>
+                  </div>
+
+                  {/* Étape 7 */}
+                  <div className="relative flex items-center gap-6 group">
+                    <div className="relative flex-shrink-0">
+                      <div className="w-10 h-10 bg-gradient-to-br from-primary to-primary/80 text-white rounded-full flex items-center justify-center font-bold text-sm shadow-lg ring-2 ring-white z-10 group-hover:scale-105 transition-transform duration-300">
+                        7
+                      </div>
+                      <div className="absolute inset-0 w-10 h-10 bg-primary/20 rounded-full animate-pulse"></div>
+                    </div>
+                    <div className="flex-1 bg-white rounded-lg p-4 shadow-md border border-gray-100 group-hover:shadow-lg group-hover:border-primary/20 transition-all duration-300">
+                      <h4 className="text-lg font-bold text-gray-900">
+                        PASSAGE EN COMMISSION AUPRÈS DE L&apos;ANAH
+                      </h4>
+                    </div>
                   </div>
                 </div>
+              </div>
 
-                {/* Étape 3 */}
-                <div className="relative flex items-center gap-6 group">
-                  <div className="relative flex-shrink-0">
-                    <div className="w-10 h-10 bg-gradient-to-br from-primary to-primary/80 text-white rounded-full flex items-center justify-center font-bold text-sm shadow-lg ring-2 ring-white z-10 group-hover:scale-105 transition-transform duration-300">
-                      3
-                    </div>
-                    <div className="absolute inset-0 w-10 h-10 bg-primary/20 rounded-full animate-pulse"></div>
-                  </div>
-                  <div className="flex-1 bg-white rounded-lg p-4 shadow-md border border-gray-100 group-hover:shadow-lg group-hover:border-primary/20 transition-all duration-300">
-                    <h4 className="text-lg font-bold text-gray-900">
-                      PASSAGE DU MAR CHEZ LE CLIENT
-                    </h4>
-                  </div>
-                </div>
+              {/* Deuxième colonne - Étapes 8 à 13 */}
+              <div className="relative">
+                {/* Ligne verticale dégradée pour la deuxième colonne */}
+                <div
+                  className="absolute left-5 top-8 w-0.5 bg-gradient-to-b from-primary via-primary to-primary/30 rounded-full"
+                  style={{ height: "calc(100% - 160px)" }}
+                ></div>
 
-                {/* Étape 4 */}
-                <div className="relative flex items-center gap-6 group">
-                  <div className="relative flex-shrink-0">
-                    <div className="w-10 h-10 bg-gradient-to-br from-primary to-primary/80 text-white rounded-full flex items-center justify-center font-bold text-sm shadow-lg ring-2 ring-white z-10 group-hover:scale-105 transition-transform duration-300">
-                      4
+                <div className="space-y-6">
+                  {/* Étape 8 */}
+                  <div className="relative flex items-center gap-6 group">
+                    <div className="relative flex-shrink-0">
+                      <div className="w-10 h-10 bg-gradient-to-br from-primary to-primary/80 text-white rounded-full flex items-center justify-center font-bold text-sm shadow-lg ring-2 ring-white z-10 group-hover:scale-105 transition-transform duration-300">
+                        8
+                      </div>
+                      <div className="absolute inset-0 w-10 h-10 bg-primary/20 rounded-full animate-pulse"></div>
                     </div>
-                    <div className="absolute inset-0 w-10 h-10 bg-primary/20 rounded-full animate-pulse"></div>
+                    <div className="flex-1 bg-white rounded-lg p-4 shadow-md border border-gray-100 group-hover:shadow-lg group-hover:border-primary/20 transition-all duration-300">
+                      <h4 className="text-lg font-bold text-gray-900">
+                        VALIDATION DE LA PRIME
+                      </h4>
+                    </div>
                   </div>
-                  <div className="flex-1 bg-white rounded-lg p-4 shadow-md border border-gray-100 group-hover:shadow-lg group-hover:border-primary/20 transition-all duration-300">
-                    <h4 className="text-lg font-bold text-gray-900">
-                      MONTAGE DU DOSSIER : DEVIS AVEC SCÉNARIO CHOISI
-                    </h4>
-                  </div>
-                </div>
 
-                {/* Étape 5 */}
-                <div className="relative flex items-center gap-6 group">
-                  <div className="relative flex-shrink-0">
-                    <div className="w-10 h-10 bg-gradient-to-br from-primary to-primary/80 text-white rounded-full flex items-center justify-center font-bold text-sm shadow-lg ring-2 ring-white z-10 group-hover:scale-105 transition-transform duration-300">
-                      5
+                  {/* Étape 9 */}
+                  <div className="relative flex items-center gap-6 group">
+                    <div className="relative flex-shrink-0">
+                      <div className="w-10 h-10 bg-gradient-to-br from-primary to-primary/80 text-white rounded-full flex items-center justify-center font-bold text-sm shadow-lg ring-2 ring-white z-10 group-hover:scale-105 transition-transform duration-300">
+                        9
+                      </div>
+                      <div className="absolute inset-0 w-10 h-10 bg-primary/20 rounded-full animate-pulse"></div>
                     </div>
-                    <div className="absolute inset-0 w-10 h-10 bg-primary/20 rounded-full animate-pulse"></div>
+                    <div className="flex-1 bg-white rounded-lg p-4 shadow-md border border-gray-100 group-hover:shadow-lg group-hover:border-primary/20 transition-all duration-300">
+                      <h4 className="text-lg font-bold text-gray-900">
+                        DEMANDE D&apos;AVANCE DE LA PRIME
+                      </h4>
+                    </div>
                   </div>
-                  <div className="flex-1 bg-white rounded-lg p-4 shadow-md border border-gray-100 group-hover:shadow-lg group-hover:border-primary/20 transition-all duration-300">
-                    <h4 className="text-lg font-bold text-gray-900">
-                      PROPOSITION DU PROJET AUPRÈS D&apos;UN MAR
-                    </h4>
-                  </div>
-                </div>
 
-                {/* Étape 6 */}
-                <div className="relative flex items-center gap-6 group">
-                  <div className="relative flex-shrink-0">
-                    <div className="w-10 h-10 bg-gradient-to-br from-primary to-primary/80 text-white rounded-full flex items-center justify-center font-bold text-sm shadow-lg ring-2 ring-white z-10 group-hover:scale-105 transition-transform duration-300">
-                      6
+                  {/* Étape 10 */}
+                  <div className="relative flex items-center gap-6 group">
+                    <div className="relative flex-shrink-0">
+                      <div className="w-10 h-10 bg-gradient-to-br from-primary to-primary/80 text-white rounded-full flex items-center justify-center font-bold text-sm shadow-lg ring-2 ring-white z-10 group-hover:scale-105 transition-transform duration-300">
+                        10
+                      </div>
+                      <div className="absolute inset-0 w-10 h-10 bg-primary/20 rounded-full animate-pulse"></div>
                     </div>
-                    <div className="absolute inset-0 w-10 h-10 bg-primary/20 rounded-full animate-pulse"></div>
+                    <div className="flex-1 bg-white rounded-lg p-4 shadow-md border border-gray-100 group-hover:shadow-lg group-hover:border-primary/20 transition-all duration-300">
+                      <h4 className="text-lg font-bold text-gray-900">
+                        DÉMARRAGE DES TRAVAUX
+                      </h4>
+                    </div>
                   </div>
-                  <div className="flex-1 bg-white rounded-lg p-4 shadow-md border border-gray-100 group-hover:shadow-lg group-hover:border-primary/20 transition-all duration-300">
-                    <h4 className="text-lg font-bold text-gray-900">
-                      DÉPÔTS DES DOCUMENTS ADMINISTRATIFS
-                    </h4>
-                  </div>
-                </div>
 
-                {/* Étape 7 */}
-                <div className="relative flex items-center gap-6 group">
-                  <div className="relative flex-shrink-0">
-                    <div className="w-10 h-10 bg-gradient-to-br from-primary to-primary/80 text-white rounded-full flex items-center justify-center font-bold text-sm shadow-lg ring-2 ring-white z-10 group-hover:scale-105 transition-transform duration-300">
-                      7
+                  {/* Étape 11 */}
+                  <div className="relative flex items-center gap-6 group">
+                    <div className="relative flex-shrink-0">
+                      <div className="w-10 h-10 bg-gradient-to-br from-primary to-primary/80 text-white rounded-full flex items-center justify-center font-bold text-sm shadow-lg ring-2 ring-white z-10 group-hover:scale-105 transition-transform duration-300">
+                        11
+                      </div>
+                      <div className="absolute inset-0 w-10 h-10 bg-primary/20 rounded-full animate-pulse"></div>
                     </div>
-                    <div className="absolute inset-0 w-10 h-10 bg-primary/20 rounded-full animate-pulse"></div>
+                    <div className="flex-1 bg-white rounded-lg p-4 shadow-md border border-gray-100 group-hover:shadow-lg group-hover:border-primary/20 transition-all duration-300">
+                      <h4 className="text-lg font-bold text-gray-900">
+                        FIN DES TRAVAUX
+                      </h4>
+                    </div>
                   </div>
-                  <div className="flex-1 bg-white rounded-lg p-4 shadow-md border border-gray-100 group-hover:shadow-lg group-hover:border-primary/20 transition-all duration-300">
-                    <h4 className="text-lg font-bold text-gray-900">
-                      PASSAGE EN COMMISSION AUPRÈS DE L&apos;ANAH
-                    </h4>
-                  </div>
-                </div>
 
-                {/* Étape 8 */}
-                <div className="relative flex items-center gap-6 group">
-                  <div className="relative flex-shrink-0">
-                    <div className="w-10 h-10 bg-gradient-to-br from-primary to-primary/80 text-white rounded-full flex items-center justify-center font-bold text-sm shadow-lg ring-2 ring-white z-10 group-hover:scale-105 transition-transform duration-300">
-                      8
+                  {/* Étape 12 */}
+                  <div className="relative flex items-center gap-6 group">
+                    <div className="relative flex-shrink-0">
+                      <div className="w-10 h-10 bg-gradient-to-br from-primary to-primary/80 text-white rounded-full flex items-center justify-center font-bold text-sm shadow-lg ring-2 ring-white z-10 group-hover:scale-105 transition-transform duration-300">
+                        12
+                      </div>
+                      <div className="absolute inset-0 w-10 h-10 bg-primary/20 rounded-full animate-pulse"></div>
                     </div>
-                    <div className="absolute inset-0 w-10 h-10 bg-primary/20 rounded-full animate-pulse"></div>
+                    <div className="flex-1 bg-white rounded-lg p-4 shadow-md border border-gray-100 group-hover:shadow-lg group-hover:border-primary/20 transition-all duration-300">
+                      <h4 className="text-lg font-bold text-gray-900">
+                        PASSAGE DU MAR
+                      </h4>
+                    </div>
                   </div>
-                  <div className="flex-1 bg-white rounded-lg p-4 shadow-md border border-gray-100 group-hover:shadow-lg group-hover:border-primary/20 transition-all duration-300">
-                    <h4 className="text-lg font-bold text-gray-900">
-                      VALIDATION DE LA PRIME
-                    </h4>
-                  </div>
-                </div>
 
-                {/* Étape 9 */}
-                <div className="relative flex items-center gap-6 group">
-                  <div className="relative flex-shrink-0">
-                    <div className="w-10 h-10 bg-gradient-to-br from-primary to-primary/80 text-white rounded-full flex items-center justify-center font-bold text-sm shadow-lg ring-2 ring-white z-10 group-hover:scale-105 transition-transform duration-300">
-                      9
+                  {/* Étape 13 */}
+                  <div className="relative flex items-center gap-6 group">
+                    <div className="relative flex-shrink-0">
+                      <div className="w-10 h-10 bg-gradient-to-br from-primary to-primary/80 text-white rounded-full flex items-center justify-center font-bold text-sm shadow-lg ring-2 ring-white z-10 group-hover:scale-105 transition-transform duration-300">
+                        13
+                      </div>
+                      <div className="absolute inset-0 w-10 h-10 bg-primary/20 rounded-full animate-pulse"></div>
                     </div>
-                    <div className="absolute inset-0 w-10 h-10 bg-primary/20 rounded-full animate-pulse"></div>
-                  </div>
-                  <div className="flex-1 bg-white rounded-lg p-4 shadow-md border border-gray-100 group-hover:shadow-lg group-hover:border-primary/20 transition-all duration-300">
-                    <h4 className="text-lg font-bold text-gray-900">
-                      DEMANDE D&apos;AVANCE DE LA PRIME
-                    </h4>
-                  </div>
-                </div>
-
-                {/* Étape 10 */}
-                <div className="relative flex items-center gap-6 group">
-                  <div className="relative flex-shrink-0">
-                    <div className="w-10 h-10 bg-gradient-to-br from-primary to-primary/80 text-white rounded-full flex items-center justify-center font-bold text-sm shadow-lg ring-2 ring-white z-10 group-hover:scale-105 transition-transform duration-300">
-                      10
+                    <div className="flex-1 bg-white rounded-lg p-4 shadow-md border border-gray-100 group-hover:shadow-lg group-hover:border-primary/20 transition-all duration-300">
+                      <h4 className="text-lg font-bold text-gray-900">
+                        DÉPÔT DES FACTURES ET OBTENTION DU SOLDE
+                      </h4>
                     </div>
-                    <div className="absolute inset-0 w-10 h-10 bg-primary/20 rounded-full animate-pulse"></div>
-                  </div>
-                  <div className="flex-1 bg-white rounded-lg p-4 shadow-md border border-gray-100 group-hover:shadow-lg group-hover:border-primary/20 transition-all duration-300">
-                    <h4 className="text-lg font-bold text-gray-900">
-                      DÉMARRAGE DES TRAVAUX
-                    </h4>
-                  </div>
-                </div>
-
-                {/* Étape 11 */}
-                <div className="relative flex items-center gap-6 group">
-                  <div className="relative flex-shrink-0">
-                    <div className="w-10 h-10 bg-gradient-to-br from-primary to-primary/80 text-white rounded-full flex items-center justify-center font-bold text-sm shadow-lg ring-2 ring-white z-10 group-hover:scale-105 transition-transform duration-300">
-                      11
-                    </div>
-                    <div className="absolute inset-0 w-10 h-10 bg-primary/20 rounded-full animate-pulse"></div>
-                  </div>
-                  <div className="flex-1 bg-white rounded-lg p-4 shadow-md border border-gray-100 group-hover:shadow-lg group-hover:border-primary/20 transition-all duration-300">
-                    <h4 className="text-lg font-bold text-gray-900">
-                      FIN DES TRAVAUX
-                    </h4>
-                  </div>
-                </div>
-
-                {/* Étape 12 */}
-                <div className="relative flex items-center gap-6 group">
-                  <div className="relative flex-shrink-0">
-                    <div className="w-10 h-10 bg-gradient-to-br from-primary to-primary/80 text-white rounded-full flex items-center justify-center font-bold text-sm shadow-lg ring-2 ring-white z-10 group-hover:scale-105 transition-transform duration-300">
-                      12
-                    </div>
-                    <div className="absolute inset-0 w-10 h-10 bg-primary/20 rounded-full animate-pulse"></div>
-                  </div>
-                  <div className="flex-1 bg-white rounded-lg p-4 shadow-md border border-gray-100 group-hover:shadow-lg group-hover:border-primary/20 transition-all duration-300">
-                    <h4 className="text-lg font-bold text-gray-900">
-                      PASSAGE DU MAR
-                    </h4>
-                  </div>
-                </div>
-
-                {/* Étape 13 */}
-                <div className="relative flex items-center gap-6 group">
-                  <div className="relative flex-shrink-0">
-                    <div className="w-10 h-10 bg-gradient-to-br from-primary to-primary/80 text-white rounded-full flex items-center justify-center font-bold text-sm shadow-lg ring-2 ring-white z-10 group-hover:scale-105 transition-transform duration-300">
-                      13
-                    </div>
-                    <div className="absolute inset-0 w-10 h-10 bg-primary/20 rounded-full animate-pulse"></div>
-                  </div>
-                  <div className="flex-1 bg-white rounded-lg p-4 shadow-md border border-gray-100 group-hover:shadow-lg group-hover:border-primary/20 transition-all duration-300">
-                    <h4 className="text-lg font-bold text-gray-900">
-                      DÉPÔT DES FACTURES ET OBTENTION DU SOLDE
-                    </h4>
                   </div>
                 </div>
               </div>
