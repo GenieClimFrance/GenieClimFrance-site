@@ -34,6 +34,10 @@ function Footer() {
             </li>
             <li className="flex items-center gap-2 hover:text-tertiary transition-colors duration-300 cursor-pointer">
               <IoMdPhonePortrait className="text-primary" />
+              <a href="tel:0972121401">09 72 12 14 01</a>
+            </li>
+            <li className="flex items-center gap-2 hover:text-tertiary transition-colors duration-300 cursor-pointer">
+              <IoMdPhonePortrait className="text-primary" />
               <a href="tel:0769762636">07 69 76 26 36</a>
             </li>
             <li className="mt-2">
