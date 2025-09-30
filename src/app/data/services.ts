@@ -153,7 +153,7 @@ export const services: { [key: string]: Service } = {
     image: isolation,
     bgImage: "bg-[url('/isolation.webp')]",
     icon: isolationIcon,
-    titleArticle: "Les isolation : Combles, plancher bas, ITE",
+    titleArticle: "Les isolations : Combles, plancher bas, ITE",
     text1:
       "Inclus dans votre programme, nous vous proposons d'isoler vos combles et vos planchers bas, pour une rénovation énergétique complète de votre maison.",
     text2:
