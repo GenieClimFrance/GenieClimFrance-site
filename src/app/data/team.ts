@@ -28,9 +28,9 @@ const cards = [
   {
     id: 5,
     img: test,
-    name: "Christelle Rodrigues",
+    name: "Christelle Mercier",
     role: "Assistante administrative & Technique",
-    mail: "c.rodrigues@genielimfrance.fr",
+    mail: "c.mercier@genielimfrance.fr",
     phone: "06 64 74 12 48",
   },
   {
